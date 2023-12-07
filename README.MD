@@ -35,3 +35,5 @@ https://practicetestautomation.com/practice-test-login/
 4. Puch Submit button
 5. Verify error message is displayed
 6. Verify error message text is Your password is invalid!
+
+To install dependencies please run pip install -r requirements.txt command
