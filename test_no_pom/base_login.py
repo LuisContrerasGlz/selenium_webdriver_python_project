@@ -31,10 +31,13 @@ submit_button_locator.click()
 # new page URL 
 
 actual_url = driver.current_url
+assert actual_url == "https://practicetestautomation.com/logged-in-successfully/"
 
 # Text from page after login
 text_locator = driver.find_element(By.TAG_NAME, "h1")
 actual_text = text_locator.text
+assert actual_text == "Logged In Successfully"
 
 # Button for log out
 log_out_button_locator = driver.find_element(By.LINK_TEXT, "Log out")
+assert log_out_button_locator.is_displayed()
